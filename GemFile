@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'cucumber'
+gem 'selenium-webdriver'
+gem 'page-object'
+gem 'rspec'
+gem 'require_all'
+gem 'fig_newton'
+gem 'rake'
+gem 'data_magic'
+gem 'oj'
