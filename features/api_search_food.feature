@@ -14,7 +14,7 @@ Feature: API Search for nutrition data
       | Tomato   | TOMATO     |
 
   @regressionTest
-  Scenario: Confirm Number of results per page is correct
+  Scenario: Confirm number of results per page is correct
     When I request a limited food search with the following parameters
       | query        | numberOfResultsPerPage | pageSize |
       | avocado, raw | 3                      | 3        |

@@ -3,7 +3,7 @@ require 'cucumber'
 require 'cucumber/rake/task'
 
 # command line options here https://cucumber.io/docs/tools/ruby/
-# ro tun rake apionly,  rake features or rake uionly
+# to tun rake apionly,  rake features or rake uionly
 # see cucumber.yml for options for more options https://cucumber.io/docs/cucumber/configuration/#profiles
 
 Cucumber::Rake::Task.new(:features) do |t|

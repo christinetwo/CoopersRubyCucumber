@@ -1,3 +1,3 @@
 default: --no-source --color --format pretty
 apionly: --no-source --color --format pretty --tags @APITests
-uionly: --no-source --color --format pretty --tags @UITests
+uionly: --no-source --color --format pretty --tags @UITests ENV_LOCATION=qa BROWSER_TYPE=headless

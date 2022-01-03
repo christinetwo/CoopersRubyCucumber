@@ -1,0 +1,5 @@
+baseurl: https://fdc.nal.usda.gov
+searchurl: https://fdc.nal.usda.gov/fdc-app.html#/
+apiurl: https://api.nal.usda.gov/fdc/v1
+# this is example of different location to run in this case localhost urls would be replaced above
+# see env.rb to set to run in rubymine

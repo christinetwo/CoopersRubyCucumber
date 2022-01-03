@@ -11,7 +11,7 @@ Feature: UI Search for nutrition data
       | Avocado | Oil, avocado |
       | dirt    | 0 results    |
 
-  @smokeTest
+  @smokeTest @TearDownHookExample
   Scenario Outline: search from landing page
     Given I am on the Landing page
     When I enter a landing search for "<food>"
