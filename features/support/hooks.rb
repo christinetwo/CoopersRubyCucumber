@@ -18,13 +18,13 @@ Before('@ui_tests') do
   case browser_type
   when 'chrome'
     @browser = Selenium::WebDriver.for :chrome
-  when 'chrome_mobile'
+  when 'mobile'
     browser_options.add_emulation(device_name: 'iPhone X')
     @browser = Selenium::WebDriver.for :chrome, :options => browser_options
   when 'headless'
     browser_options.args << '--headless'
     @browser = Selenium::WebDriver.for :chrome, :options => browser_options
-  when 'chrome_ipad'
+  when 'ipad'
     browser_options.add_emulation(device_name: 'iPad')
     @browser = Selenium::WebDriver.for :chrome, :options => browser_options
   when 'firefox'
