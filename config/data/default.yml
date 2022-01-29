@@ -1,0 +1,5 @@
+contact_us_page:
+  fullname: ~full_name
+  email: ~randomize ["Stevemailinatoer","testemailmailinator"]
+  topic: ~randomize ["General Questions","FoodData Requests"]
+  affiliation: ~randomize ["Congress","Consumer","Department of Defense (DOD)"]

@@ -3,7 +3,7 @@ require 'net/http'
 require 'json'
 
 When('I request a limited food search with the following parameters') do |request_table|
-  #turn table to hash to search json,  all params are optional except query
+  # turn table to hash to search json,  all params are optional except query
   request_hash = request_table.hashes
   raw_hash = request_hash[0]
   request_json = SearchEndpoint.new(raw_hash["query"], raw_hash["pageNumber"], raw_hash["generalSearchInput"],

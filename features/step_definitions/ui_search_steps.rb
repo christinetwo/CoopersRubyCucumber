@@ -16,8 +16,3 @@ end
 When('I enter a landing search for {string}') do |search_term|
   @current_page.enter_landing_search(search_term)
 end
-
-Then(/^I should see "([^"]*)"$/) do |message|
-  @current_page.wait_until { @current_page.text.include? message }
-  @current_page.text.should include message
-end

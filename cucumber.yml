@@ -1,3 +1,4 @@
-default: --no-source --color --format pretty
-apionly: --no-source --color --format pretty --tags @APITests
-uionly: --no-source --color --format pretty --tags @UITests ENV_LOCATION=qa BROWSER_TYPE=headless
+default: --no-source --color --format pretty --publish-quiet
+api_only: --no-source --color --format pretty --tags @api_tests --publish-quiet
+ui_only: --no-source --color --format pretty --tags @ui_tests --publish-quiet ENV_LOCATION=qa BROWSER_TYPE=chrome
+ui_only_smoke_test: --no-source --color --format pretty --tags @ui_smoke_test --publish-quiet ENV_LOCATION=qa BROWSER_TYPE=chrome

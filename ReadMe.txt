@@ -8,3 +8,10 @@ Requirements:
 
 To DO
 Add after scenario cleanup
+
+
+- add git to project in ide
+- git status
+- git add .
+- git status
+- git commit -m 'initial commit'

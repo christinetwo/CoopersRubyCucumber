@@ -1,7 +1,6 @@
-require 'watir-webdriver'
 require 'selenium-webdriver'
 
-Before('@UITests') do
+Before('@ui_tests') do
   browser_type = ENV['BROWSER_TYPE']
 
   if browser_type.nil? || browser_type.empty?
@@ -36,6 +35,6 @@ Before('@UITests') do
 
 end
 
-After('@UITests') do
+After('@ui_tests') do
   @browser.close
 end

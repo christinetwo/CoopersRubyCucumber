@@ -1,8 +1,9 @@
-@APITests
+@api_tests
 Feature: API Search for nutrition data
 
-  @smokeTest @regressionTest
+  @smoke_test @regression_test
   Scenario Outline: Request Search list
+    # all search params are optional except query
     When I request a limited food search with the following parameters
       | query      | generalSearchInput | pageNumber | numberOfResultsPerPage | pageSize | requireAllWords |
       | <foodName> | <foodName>         | 1          | 50                     | 3        | true            |
@@ -13,7 +14,7 @@ Feature: API Search for nutrition data
       | Carrots  | CARROTS    |
       | Tomato   | TOMATO     |
 
-  @regressionTest
+  @regression_test
   Scenario: Confirm number of results per page is correct
     When I request a limited food search with the following parameters
       | query        | numberOfResultsPerPage | pageSize |

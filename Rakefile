@@ -10,12 +10,16 @@ Cucumber::Rake::Task.new(:features) do |t|
   t.profile = 'default'
 end
 
-Cucumber::Rake::Task.new(:apionly) do |t|
-  t.profile = 'apionly'
+Cucumber::Rake::Task.new(:api_only) do |t|
+  t.profile = 'api_only'
 end
 
-Cucumber::Rake::Task.new(:uionly) do |t|
-  t.profile = 'uionly'
+Cucumber::Rake::Task.new(:ui_only) do |t|
+  t.profile = 'ui_only'
+end
+
+Cucumber::Rake::Task.new(:ui_only_smoke_test) do |t|
+  t.profile = 'ui_only_smoke_test'
 end
 
 task :default => :features
